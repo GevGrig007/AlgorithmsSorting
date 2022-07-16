@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgorithmsSort", "AlgorithmsSort\AlgorithmsSort.csproj", "{21388CFA-5072-4DAF-8E9A-489D78408515}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgorithmWPF", "AlgorithmWPF\AlgorithmWPF.csproj", "{65345DF3-94D2-408F-A895-AC1BE1F0BAE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21388CFA-5072-4DAF-8E9A-489D78408515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21388CFA-5072-4DAF-8E9A-489D78408515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21388CFA-5072-4DAF-8E9A-489D78408515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21388CFA-5072-4DAF-8E9A-489D78408515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65345DF3-94D2-408F-A895-AC1BE1F0BAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65345DF3-94D2-408F-A895-AC1BE1F0BAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65345DF3-94D2-408F-A895-AC1BE1F0BAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65345DF3-94D2-408F-A895-AC1BE1F0BAE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F55BFCC6-9CD3-4BA0-8322-3E176281807A}
+	EndGlobalSection
+EndGlobal
