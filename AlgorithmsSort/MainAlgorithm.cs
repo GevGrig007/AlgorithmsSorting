@@ -15,7 +15,7 @@ namespace AlgorithmsSort
             Numbers = numbers;
         }
         public MainAlgorithm() { }
-        public  void Swap( int number1, int number2)
+        public  void Swap( ref int number1, ref int number2)
         {
             var temp = number1;
             number1 = number2;

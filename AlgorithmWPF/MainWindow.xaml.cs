@@ -36,27 +36,40 @@ namespace AlgorithmWPF
             AddNumber.Clear();
             shownumber.ItemsSource = Numbers.ToList();
         }
-        private void buble_Click(object sender, RoutedEventArgs e)
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e) { }
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)  { }
+        private void progbar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)  { }
+        private void shownumber_SelectionChanged(object sender, SelectionChangedEventArgs e) { }
+        private void refresh_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Numbers.Clear();
+            sortednumber.ItemsSource = null;
+            shownumber.ItemsSource = null;
+        }
+        
+        private void Shake_Click(object sender, RoutedEventArgs e)
+        {
+            var sortednumbers = new ShakeSort(Numbers);
+            sortednumber.ItemsSource = sortednumbers.MakeSort();
+            operationcount.Text = sortednumbers.OperationCount.ToString();
+        }
+        private void Insert_Click(object sender, RoutedEventArgs e)
+        {
+            var sortednumbers = new InsertionSort(Numbers);
+            sortednumber.ItemsSource = sortednumbers.MakeSort();
+            operationcount.Text = sortednumbers.OperationCount.ToString();
+        }
+        private void Bubble_Click(object sender, RoutedEventArgs e)
         {
             var sortednumbers = new BubbleSort(Numbers);
             sortednumber.ItemsSource = sortednumbers.MakeSort();
             operationcount.Text = sortednumbers.OperationCount.ToString();
         }
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        private void Shell_Click(object sender, RoutedEventArgs e)
         {
-            
-        }
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-           
-        }
-        private void progbar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-
-        }
-        private void shownumber_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
+            var sortednumbers = new ShellSort(Numbers);
+            sortednumber.ItemsSource = sortednumbers.MakeSort();
+            operationcount.Text = sortednumbers.OperationCount.ToString();
         }
     }
 }

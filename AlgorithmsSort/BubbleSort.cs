@@ -29,7 +29,6 @@ namespace AlgorithmsSort
                 }
             }
             return Numbers;
-        }
-        
+        } 
     }
 }

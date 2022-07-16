@@ -7,11 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="addbutton" Content="Add" HorizontalAlignment="Left" Height="30" Margin="196,51,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="31" Margin="56,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" Name="AddNumber" TextChanged="TextBox_TextChanged_1" Text="Add number"/>
-        <ListBox x:Name="shownumber" HorizontalAlignment="Left" Height="303" Margin="56,107,0,0" VerticalAlignment="Top" Width="83" SelectionChanged="shownumber_SelectionChanged" />
-        <ListBox x:Name="sortednumber" HorizontalAlignment="Left" Height="303" Margin="196,107,0,0" VerticalAlignment="Top" Width="83"/>
-        <Button x:Name="buble" Content="bubblesort" HorizontalAlignment="Left" Height="39" Margin="668,51,0,0" VerticalAlignment="Top" Width="86" Click="buble_Click"/>
-        <TextBlock x:Name="operationcount" HorizontalAlignment="Left" Height="37" Margin="347,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" RenderTransformOrigin="-0.41,0.096"/>
+        <Button x:Name="addbutton" Content="Add" HorizontalAlignment="Left" Height="31" Margin="196,35,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="31" Margin="56,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" Name="AddNumber" TextChanged="TextBox_TextChanged_1" Grid.RowSpan="2"/>
+        <ListBox x:Name="shownumber" HorizontalAlignment="Left" Height="303" Margin="57,100,0,0" VerticalAlignment="Top" Width="82" SelectionChanged="shownumber_SelectionChanged" />
+        <ListBox x:Name="sortednumber" HorizontalAlignment="Left" Height="303" Margin="196,100,0,0" VerticalAlignment="Top" Width="83"/>
+        <Button x:Name="Bubble" Content="Bubble Sort" HorizontalAlignment="Left" Height="39" Margin="691,35,0,0" VerticalAlignment="Top" Width="86" Click="Bubble_Click"/>
+        <TextBlock x:Name="operationcount" HorizontalAlignment="Left" Height="37" Margin="430,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" RenderTransformOrigin="-0.41,0.096"/>
+        <TextBlock HorizontalAlignment="Left" Height="27" Margin="362,317,0,0" TextWrapping="Wrap" Text="Amount of comparison :" VerticalAlignment="Top" Width="137"/>
+        <Button x:Name="refresh_btn" Content="Refresh" HorizontalAlignment="Left" Height="37" Margin="588,366,0,0" VerticalAlignment="Top" Width="130" Click="refresh_btn_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="56,10,0,0" TextWrapping="Wrap" Text="Add a numbers :" VerticalAlignment="Top" Width="97"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="196,79,0,0" TextWrapping="Wrap" Text="Sorted list :" VerticalAlignment="Top" Width="107"/>
+        <Button x:Name="Shake" Content="Shake Sort" HorizontalAlignment="Left" Height="39" Margin="691,87,0,0" VerticalAlignment="Top" Width="86" Click="Shake_Click"/>
+        <Button x:Name="Insert" Content="Insert Sort" HorizontalAlignment="Left" Height="39" Margin="691,144,0,0" VerticalAlignment="Top" Width="86" Click="Insert_Click"/>
+        <Button x:Name="Shell" Content="Shell Sort" HorizontalAlignment="Left" Height="39" Margin="691,0,0,0" VerticalAlignment="Center" Width="86" Click="Shell_Click"/>
     </Grid>
 </Window>
