@@ -1,1 +1,1 @@
-# AlgorithmsSorting
+Learning sorting algorithms
